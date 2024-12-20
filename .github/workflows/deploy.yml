@@ -1,0 +1,16 @@
+name: ECS Service Deployment 
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - development
+      - staging
+      - main
+
+jobs:
+  using_ecs:
+    name: Reusing ECS Workflow
+    uses: Traxi-on/reusable-workflows/.github/workflows/ecs.yml@main
+    secrets: inherit

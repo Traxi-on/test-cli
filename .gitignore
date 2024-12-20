@@ -1,0 +1,24 @@
+# Build artifacts
+*.env
+venv
+*app.log
+.vscode
+*ruff_cache
+.mypy_cache
+.python-version
+
+# Python bytecode
+__pycache__
+*/__pycache__
+
+# IDE settings
+.idea
+.project
+.settings
+
+# Test files
+*.tests
+*.test.*
+
+# rules exception
+!example.env
